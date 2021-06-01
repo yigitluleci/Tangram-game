@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TangramGame Easy3</title>
+    <link rel="stylesheet" href="../css/settings.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/tangram.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-image: url(../img/bg.jpg);">
+    
+
+    <div id="mySidenav" class="sidenav">
+        <!--Side Bar-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Easy1.html">Easy#1</a>
+        <a href="Easy2.html">Easy#2</a>
+        <a href="Easy3.html">Easy#3</a>
+        <a href="Medium1.html">Medium#1</a>
+        <a href="Medium2.html">Medium#2</a>
+        <a href="Medium3.html">Medium#3</a>
+        <a href="Medium4.html">Medium#4</a>
+        <a href="Hard1.html">Hard#1</a>
+        <a href="hard2.html">Hard#2</a>
+      </div>
+    
+    <div class="genel">
+        <!--Navigation Bar-->
+        <nav class="desk">
+            <ul>
+                <li><span style="color: white;" onclick="openNav()">&#9776; Play</span></li>
+                <li><a href="../about.html">About Tangram</a></li>
+                <li><a href="../how2play.html">How to Play</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <img id="heart" src="../img/heart.png" alt="on">
+    <h1 id="header">Easy-Level 3</h1>
+
+    <div id="blockTray">
+
+        <div id="square" class="block"></div>
+        <div id="triangle1" class="block"></div>
+        <div id="triangle2" class="block"></div>
+        <div id="triangle3" class="block"></div>
+        <div id="triangle4" class="block"></div>
+        <div id="triangle5" class="block"></div>
+        <!--We create it in a separate class beacuse transform : rotate() function disrupt the skew() function-->
+            <div style="
+            width: 75px;
+            height: 150px;
+            -webkit-transform: skewy(-45deg) ;
+               -moz-transform: skew(-45deg);
+                 -o-transform: skew(-45deg);        
+            background: #e67e22;
+            top:-600px;" 
+            id="parallelogram" class="parallelogram"></div>
+
+    </div>
+    
+
+    <div id="gameBoard" style="
+    background-image: url('../img/tangrams/3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    "
+    >
+    
+</body>
+</html>
